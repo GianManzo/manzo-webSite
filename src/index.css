@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+li.logo {
+  animation: appear 1000ms ease;
+  cursor: pointer;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+    transform: translateX(-30px);
+  }
+}
+
+.rocket-animation {
+  animation: rocket 1.5s ease;
+  margin-top: 4rem;
+}
+
+@keyframes rocket {
+  from {
+    opacity: 0%;
+    transform: translateY(300px);
+  }
+}
+
+.turbines-rocket {
+  animation: turbines 0.2s cubic-bezier(0.6, -0.6, 0.32, 1.6) alternate infinite;
+}
+
+@keyframes turbines {
+  from {
+    transform: skew(0deg, -1deg);
+  }
+}
