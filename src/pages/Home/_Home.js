@@ -9,6 +9,9 @@ export const Container = styled.div`
   height: calc(100vh - ${height_Header});
   margin-inline: 24px;
 `
+export const Wrapper = styled.div`
+  background-color: ${gray.c19};
+`
 
 export const Title = styled.h1`
   color: ${gray.c2};
@@ -21,10 +24,6 @@ export const Subtitle = styled.p`
   font-family: 'Roboto', sans-serif;
   color: ${gray.c6};
   margin-top: 1rem;
-`
-
-export const Wrapper = styled.div`
-  background-color: ${gray.c19};
 `
 
 export const Btn = styled.button`
@@ -47,4 +46,5 @@ export const Btn = styled.button`
 export const Rocket = styled.div`
   display: flex;
   justify-content: center;
+  margin-inline: 24px;
 `

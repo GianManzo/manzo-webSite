@@ -2,6 +2,7 @@ import React from 'react'
 import * as C from './_Home'
 import { ReactComponent as MenuIcon } from '../../assets/menu.svg'
 import { ReactComponent as Rocket } from '../../assets/rocket.svg'
+import { useState } from 'react'
 
 export const Home = () => {
   return (

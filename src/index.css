@@ -45,3 +45,40 @@ li.logo {
     transform: skew(0deg, -1deg);
   }
 }
+
+.point-one {
+  animation: move-point 4.5s reverse infinite;
+}
+
+@keyframes move-point {
+  from {
+    transform: translateY(2000px);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+.point-two {
+  animation: move-point-two 3.5s reverse infinite;
+}
+
+@keyframes move-point-two {
+  from {
+    transform: translateY(3000px);
+  }
+  to {
+    transform: translateY(-300px);
+  }
+}
+.point-third {
+  animation: move-point-third 5.5s reverse infinite;
+}
+
+@keyframes move-point-third {
+  from {
+    transform: translateY(3000px);
+  }
+  to {
+    transform: translateY(-300px);
+  }
+}
