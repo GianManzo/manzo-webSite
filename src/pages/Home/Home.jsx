@@ -14,7 +14,7 @@ export const Home = () => {
           <C.Btn>
             Open Menu <span>{<MenuIcon width={18} height={18} />}</span>
           </C.Btn>
-          <C.Rocket className="rocket-animation">
+          <C.Rocket className="show-animation">
             <Rocket />
           </C.Rocket>
         </C.Container>

@@ -5,7 +5,7 @@ export const height_Header = '72px'
 
 export const Header = styled.header`
   height: ${height_Header};
-  background-color: ${gray.c19};
+  background-color: ${gray.g19};
 `
 
 export const Nav = styled.nav`
