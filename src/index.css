@@ -24,9 +24,8 @@ li.logo {
   }
 }
 
-.rocket-animation {
+.show-animation {
   animation: rocket 1.5s ease;
-  margin-top: 4rem;
 }
 
 @keyframes rocket {
