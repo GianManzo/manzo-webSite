@@ -7,12 +7,17 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 
 function App() {
+  const [modal, setModal] = useState(false)
+
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header modal={modal} setModal={setModal} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={<Home modal={modal} setModal={setModal} />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

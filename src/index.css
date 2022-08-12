@@ -12,8 +12,8 @@ code {
     monospace;
 }
 
-li.logo {
-  animation: appear 1000ms ease;
+.right-animation {
+  animation: appear 1.5s ease;
   cursor: pointer;
 }
 
@@ -21,6 +21,9 @@ li.logo {
   from {
     opacity: 0%;
     transform: translateX(-30px);
+  }
+  to {
+    opacity: 100%;
   }
 }
 
@@ -30,8 +33,12 @@ li.logo {
 
 @keyframes rocket {
   from {
-    opacity: 0%;
+    opacity: 50%;
     transform: translateY(300px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0);
   }
 }
 
@@ -79,5 +86,17 @@ li.logo {
   }
   to {
     transform: translateY(-300px);
+  }
+}
+
+.modal-animation {
+  animation: show-modal 0.2s alternate;
+}
+@keyframes show-modal {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }
