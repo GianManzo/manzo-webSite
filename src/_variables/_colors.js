@@ -17,7 +17,8 @@ export const gray = {
   g16: '#1D1D1D',
   g17: '#181818',
   g18: '#141414',
-  g19: '#050505'
+  g19: '#050505',
+  g0s: `rgba(0, 0, 0, 0.512)`
 }
 
 export const purple = {

@@ -8,15 +8,21 @@ export const Footer = styled.footer`
   height: ${height_Footer};
   display: flex;
   justify-content: center;
-`
-
-export const Ul = styled.ul`
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-`
-export const Nav = styled.nav`
-  width: 100%;
-  margin-inline: 24px;
+  nav {
+    width: 100%;
+    margin-inline: 24px;
+    ul {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      li {
+        opacity: 60%;
+        transition: 0.3s;
+        :hover {
+          opacity: 100%;
+        }
+      }
+    }
+  }
 `
