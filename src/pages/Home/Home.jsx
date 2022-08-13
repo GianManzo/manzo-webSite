@@ -1,5 +1,5 @@
 import React from 'react'
-import * as C from './_Home'
+import * as C from './Styles'
 import { ReactComponent as MenuIcon } from '../../assets/menu.svg'
 import { ReactComponent as Rocket } from '../../assets/rocket.svg'
 

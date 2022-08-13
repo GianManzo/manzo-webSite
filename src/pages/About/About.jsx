@@ -1,5 +1,5 @@
 import React from 'react'
-import * as C from './_About'
+import * as C from './Styles'
 import { Title } from '../../components/Title/Title'
 import MyPhoto from '../../assets/myPhoto-opti.jpg'
 import SouDev from '../../assets/soudev.svg'
@@ -7,7 +7,7 @@ import SouDev from '../../assets/soudev.svg'
 export const About = () => {
   return (
     <>
-      <section>
+      <section className="right-animation">
         <C.Wrapper>
           <Title>
             About me<span>.</span>

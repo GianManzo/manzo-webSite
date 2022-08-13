@@ -1,5 +1,5 @@
 import React from 'react'
-import * as C from './_Header'
+import * as C from './Styles'
 import { ReactComponent as Logo } from '../../assets/Marca.svg'
 import { ReactComponent as MenuIcon } from '../../assets/menu.svg'
 import { Modal } from '../Modal/Modal'

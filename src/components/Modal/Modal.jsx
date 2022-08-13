@@ -1,5 +1,5 @@
 import React from 'react'
-import * as C from './_Modal'
+import * as C from './Styles'
 import {
   House,
   User,
