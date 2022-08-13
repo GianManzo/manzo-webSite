@@ -3,9 +3,6 @@ import { height_Header } from '../../components/Header/_Header'
 import { gray, purple } from '../../_variables/_colors'
 import { height_Footer } from '../../components/Footer/_Footer'
 
-export const Container = styled.div`
-  background-color: ${gray.g19};
-`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;

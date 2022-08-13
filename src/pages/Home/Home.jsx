@@ -6,7 +6,7 @@ import { ReactComponent as Rocket } from '../../assets/rocket.svg'
 export const Home = ({ modal, setModal }) => {
   return (
     <>
-      <C.Container>
+      <section>
         <C.Wrapper>
           <div className="right-animation">
             <h1>Gian Manzo</h1>
@@ -19,7 +19,7 @@ export const Home = ({ modal, setModal }) => {
             <Rocket />
           </C.Rocket>
         </C.Wrapper>
-      </C.Container>
+      </section>
     </>
   )
 }
