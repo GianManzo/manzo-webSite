@@ -4,7 +4,9 @@ import { Home } from './pages/Home/Home'
 import { Header } from './components/Header/Header'
 import { Footer } from './components/Footer/Footer'
 import { useState } from 'react'
-import { useEffect } from 'react'
+import { About } from './pages/About/About'
+import { Skills } from './pages/Skills/Skills'
+import { Projects } from './pages/Projects/Projects'
 
 function App() {
   const [modal, setModal] = useState(false)
@@ -18,6 +20,9 @@ function App() {
             path="/"
             element={<Home modal={modal} setModal={setModal} />}
           />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
         <Footer />
       </BrowserRouter>

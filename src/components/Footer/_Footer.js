@@ -1,10 +1,8 @@
 import styled from 'styled-components'
-import { gray } from '../../_variables/_colors'
 
 export const height_Footer = '48px'
 
 export const Footer = styled.footer`
-  background-color: ${gray.g19};
   height: ${height_Footer};
   display: flex;
   justify-content: center;
