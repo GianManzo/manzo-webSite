@@ -10,6 +10,7 @@ export const Box_Title = styled.div`
     font-size: 38px;
     font-weight: bold;
     text-align: left;
+    cursor: default;
     span {
       color: ${purple.p6};
     }

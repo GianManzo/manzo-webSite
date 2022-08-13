@@ -1,5 +1,5 @@
 import React from 'react'
-import * as C from './_Footer'
+import * as C from './Styles'
 import {
   WhatsappLogo,
   InstagramLogo,

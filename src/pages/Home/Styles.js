@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { height_Header } from '../../components/Header/_Header'
+import { height_Header } from '../../components/Header/Styles'
 import { gray, purple } from '../../_variables/_colors'
-import { height_Footer } from '../../components/Footer/_Footer'
+import { height_Footer } from '../../components/Footer/Styles'
 
 export const Wrapper = styled.div`
   display: flex;
