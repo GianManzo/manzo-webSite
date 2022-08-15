@@ -1,7 +1,7 @@
 import React from 'react'
 import * as C from './Styles'
 import { Title } from '../../components/Title/Title'
-import { ListSkills } from './_ListSkills'
+import { ListSkills } from '../../data/_ListSkills'
 
 export const Skills = () => {
   return (
@@ -9,7 +9,7 @@ export const Skills = () => {
       <section className="right-animation">
         <C.Wrapper>
           <Title>
-            Skills<span>.</span>
+            Tecnologias<span>.</span>
           </Title>
           <C.Grid>
             {ListSkills.map(item => (

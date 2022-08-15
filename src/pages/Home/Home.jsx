@@ -12,7 +12,7 @@ export const Home = ({ modal, setModal }) => {
             <h1>Gian Manzo</h1>
             <p>Desenvolvedor Front-end 💻</p>
             <C.Btn onClick={() => setModal(!modal)}>
-              Open Menu <span>{<MenuIcon width={18} height={18} />}</span>
+              Menu <span>{<MenuIcon width={18} height={18} />}</span>
             </C.Btn>
           </div>
           <C.Rocket className="show-animation">

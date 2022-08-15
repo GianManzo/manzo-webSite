@@ -1,6 +1,7 @@
 import React from 'react'
 import * as C from './Styles'
 import { Title } from '../../components/Title/Title'
+import { CardProject } from '../../components/CardProject/CardProject'
 
 export const Projects = () => {
   return (
@@ -8,8 +9,9 @@ export const Projects = () => {
       <section>
         <C.Wrapper>
           <Title>
-            Projects<span>.</span>
+            Projetos<span>.</span>
           </Title>
+          <CardProject />
         </C.Wrapper>
       </section>
     </>
