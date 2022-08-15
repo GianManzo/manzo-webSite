@@ -3,6 +3,9 @@ import { gray, purple } from '../../_variables/_colors'
 
 export const Wrapper = styled.div`
   margin-inline: 24px;
+  :hover {
+    cursor: default;
+  }
 `
 
 export const Image = styled.div`

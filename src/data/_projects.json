@@ -1,0 +1,29 @@
+[
+  {
+    "title": "InstaDog",
+    "link": "https://insta-dogs-six.vercel.app/",
+    "repo": "https://github.com/GianManzo/InstaDogs",
+    "description": "Aplicação web de rede social para cachorros",
+    "stacks": ["React", "Redux", "Styled-Components", "Routes", "Helmet", "API-Rest", "Victory Graphs"],
+    "image": "https://i.imgur.com/UUScH5E.jpg",
+    "id": 1
+  },
+  {
+    "title": "Ignite-Lab",
+    "link": "https://ignite-lab-react-five.vercel.app/",
+    "repo": "https://github.com/GianManzo/ignite-lab-react",
+    "description": "Aplicação referente uma plataforma online para video-aulas da maratona Ignite-Lab ",
+    "stacks": ["React", "TypeScript", "GraphQL", "Apollo Client", "Tailwind", "Vite", "API-Rest"],
+    "image": "https://i.imgur.com/zCCQZBA.jpg",
+    "id": 2
+  },
+  {
+    "title": "Tosaka - Menu",
+    "link": "https://tosaka-menu.vercel.app/",
+    "repo": "https://github.com/GianManzo/Tosaka-menu",
+    "description": "Aplicação web referente ao cardápio de um restaurante",
+    "stacks": ["React", "TypeScript", "Sass", "Css Modules", "ClassNames", "React Icons"],
+    "image": "https://i.imgur.com/v8qzLXu.jpg",
+    "id": 3
+  }
+]

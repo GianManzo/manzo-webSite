@@ -34,7 +34,7 @@ code {
 
 @keyframes rocket {
   from {
-    opacity: 50%;
+    opacity: 0%;
     transform: translateY(300px);
   }
   to {

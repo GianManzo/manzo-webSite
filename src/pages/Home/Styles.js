@@ -27,17 +27,21 @@ export const Btn = styled.button`
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  width: 120px;
-  height: 48px;
+  padding: 1rem 1.5rem;
   font-size: 12px;
   margin-top: 20px;
   background-color: ${gray.g19};
   color: ${gray.g7};
   border: 1px solid ${purple.p4};
-  box-shadow: 0 1px 2px 0 ${purple.p4s};
   border-radius: 5px;
   cursor: pointer;
   line-height: 0;
+  opacity: 80%;
+  box-shadow: 0 1px 2px 0 ${purple.p4s};
+  transition: 0.3s;
+  :hover {
+    opacity: 100%;
+  }
 `
 
 export const Rocket = styled.div`

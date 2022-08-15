@@ -10,7 +10,7 @@ export const About = () => {
       <section className="right-animation">
         <C.Wrapper>
           <Title>
-            About me<span>.</span>
+            Sobre<span>.</span>
           </Title>
           <C.Image>
             <img src={MyPhoto} alt="Foto de perfil Gian Manzo" />
@@ -62,21 +62,25 @@ export const About = () => {
                 </a>{' '}
               </strong>{' '}
               , <strong>+28mil</strong> no{' '}
-              <a
-                href="https://www.tiktok.com/@canalsoudev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                TikTok
-              </a>{' '}
+              <strong>
+                <a
+                  href="https://www.tiktok.com/@canalsoudev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TikTok
+                </a>{' '}
+              </strong>
               e <strong>+1.9mil</strong> no{' '}
-              <a
-                href="https://t.me/+Q2zISzkU2TpmM2E5"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Telegram
-              </a>
+              <strong>
+                <a
+                  href="https://t.me/+Q2zISzkU2TpmM2E5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Telegram
+                </a>
+              </strong>
             </p>
             <p>
               Minha função de administrador na comunidade tem como propósito

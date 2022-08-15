@@ -29,29 +29,29 @@ export const Modal = ({ setModal }) => {
       <C.Modal onClick={handleClick}>
         <C.Wrapper onClick={handleClickLink} className="modal-animation">
           <div>
-            <p>G E N E R A L</p>
+            <p>G E R A L</p>
             <nav>
               <ul>
                 <li>
                   <Link to="/">
-                    <House size={25} /> Home
+                    <House size={25} /> Inicio
                   </Link>
                 </li>
                 <li>
                   <Link to="/about">
-                    <User size={25} /> About
+                    <User size={25} /> Sobre
                   </Link>
                 </li>
                 <li>
                   <Link to="/skills">
                     <Code size={25} />
-                    Skills
+                    Tecnologias
                   </Link>
                 </li>
                 <li>
                   <Link to="/projects">
                     <LightbulbFilament size={25} />
-                    Projects
+                    Projetos
                   </Link>
                 </li>
               </ul>
