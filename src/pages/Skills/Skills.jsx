@@ -15,7 +15,7 @@ export const Skills = () => {
             {ListSkills.map(item => (
               <C.Icon key={item.id}>
                 {item.component}
-                <p>{item.key}</p>
+                <p style={{ color: item.color }}>{item.key}</p>
               </C.Icon>
             ))}
           </C.Grid>

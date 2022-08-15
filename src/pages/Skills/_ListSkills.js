@@ -12,46 +12,55 @@ export const ListSkills = [
   {
     component: <Js />,
     key: 'JavaScript',
-    id: 1
+    id: 1,
+    color: '#f7e61f'
   },
   {
     component: <IconReact />,
     key: 'React',
-    id: 2
+    id: 2,
+    color: '#5ED3F3'
   },
   {
     component: <Ts />,
     key: 'TypeScript',
-    id: 3
+    id: 3,
+    color: '#0076C6'
   },
   {
     component: <Redux />,
     key: 'Redux',
-    id: 4
+    id: 4,
+    color: '#7248B6'
   },
   {
     component: <StyledC />,
     key: 'Styled-Component',
-    id: 5
+    id: 5,
+    color: '#E7A2E1'
   },
   {
     component: <Sass />,
     key: 'Sass',
-    id: 6
+    id: 6,
+    color: '#C96195'
   },
   {
     component: <Boot />,
     key: 'Bootstrap',
-    id: 7
+    id: 7,
+    color: '#533B78'
   },
   {
     component: <Css />,
     key: 'CSS',
-    id: 8
+    id: 8,
+    color: '#254BDD'
   },
   {
     component: <Html />,
     key: 'HTML',
-    id: 9
+    id: 9,
+    color: '#F76300'
   }
 ]
