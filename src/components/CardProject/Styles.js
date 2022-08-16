@@ -2,32 +2,49 @@ import styled from 'styled-components'
 import { gray, purple } from '../../_variables/_colors'
 
 export const Items = styled.li`
-  transition: 0.3s;
   margin-bottom: 48px;
-  opacity: 70%;
-  :hover {
-    opacity: 100%;
-    cursor: default;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export const Container = styled.div`
   width: 100%;
   height: auto;
   max-width: 500px;
-  margin-top: 20px;
   border-radius: 5px;
+  position: relative;
+
   img {
     border-radius: 5px;
     width: 100%;
   }
   color: white;
   background-color: ${gray.g18};
+  opacity: 60%;
+  transition: 0.3s;
+  :hover {
+    opacity: 80%;
+    cursor: default;
+  }
+  @media (min-width: 992px) {
+    max-width: 1200px;
+  }
 `
 export const Content = styled.div`
   padding: 1.5rem;
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
 `
-export const Image = styled.div``
+export const Image = styled.div`
+  @media (min-width: 992px) {
+    max-width: 500px;
+  }
+`
 
 export const Infos = styled.div`
   display: grid;
@@ -84,4 +101,9 @@ export const Techs = styled.div`
     background-color: ${gray.g14};
     border-radius: 5px;
   }
+`
+export const Details = styled.div`
+  position: absolute;
+  top: 50px;
+  left: -4px;
 `

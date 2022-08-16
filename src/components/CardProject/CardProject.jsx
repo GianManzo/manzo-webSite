@@ -1,6 +1,7 @@
 import React from 'react'
 import projects from '../../data/_projects.json'
 import * as C from './Styles'
+import { ReactComponent as Details } from '../../assets/Rectangle.svg'
 
 export const CardProject = () => {
   return (
@@ -8,9 +9,12 @@ export const CardProject = () => {
       {projects.map(item => (
         <C.Items key={item.id}>
           <C.Container>
+            <C.Details>
+              <Details />
+            </C.Details>
             <C.Content>
               <C.Image>
-                <img src={item.image} alt="" />
+                <img src={item.image} alt={item.description} />
               </C.Image>
               <C.Infos>
                 <C.Descriptions>
