@@ -14,7 +14,8 @@ export const Header = styled.header`
       height: 100%;
       margin-inline: 24px;
       ul {
-        width: 50%;
+        width: 100%;
+        max-width: 400px;
         display: flex;
         justify-content: space-evenly;
       }
