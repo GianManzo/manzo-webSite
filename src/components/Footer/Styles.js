@@ -23,4 +23,9 @@ export const Footer = styled.footer`
       }
     }
   }
+  @media (min-width: 768px) {
+    nav {
+      width: 50%;
+    }
+  }
 `

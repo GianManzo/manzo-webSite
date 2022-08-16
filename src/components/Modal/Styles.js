@@ -24,6 +24,9 @@ export const Wrapper = styled.div`
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   overflow-y: scroll;
+  @media (min-width: 768px) {
+    width: 480px;
+  }
 
   &::-webkit-scrollbar {
     width: 5px;

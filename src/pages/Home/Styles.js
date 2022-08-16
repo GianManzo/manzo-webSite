@@ -20,6 +20,16 @@ export const Wrapper = styled.div`
     color: ${gray.g6};
     margin-top: 1rem;
   }
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    h1 {
+      font-size: 68px;
+    }
+  }
 `
 
 export const Btn = styled.button`
@@ -27,7 +37,7 @@ export const Btn = styled.button`
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   font-size: 12px;
   margin-top: 20px;
   background-color: ${gray.g19};

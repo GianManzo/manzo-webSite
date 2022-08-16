@@ -17,9 +17,17 @@ export const Header = ({ modal, setModal }) => {
                 <Logo />
               </Link>
             </li>
-            <li style={{ color: 'white', display: 'none' }}>About</li>
-            <li style={{ color: 'white', display: 'none' }}>Skills</li>
-            <li style={{ color: 'white', display: 'none' }}>Projects</li>
+            <ul>
+              <li>
+                <Link to="/about">Sobre</Link>
+              </li>
+              <li>
+                <Link to="/skills">Tecnologias</Link>
+              </li>
+              <li>
+                <Link to="/projects">Projetos</Link>
+              </li>
+            </ul>
             <li onClick={() => setModal(!modal)}>
               <MenuIcon width={20} height={20} style={{ cursor: 'pointer' }} />
             </li>
