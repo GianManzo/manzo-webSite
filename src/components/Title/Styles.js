@@ -18,7 +18,13 @@ export const Box_Title = styled.div`
   z-index: 10;
   position: relative;
   margin-inline: 24px;
-  margin-top: 24px;
+  margin-block: 34px;
+  @media (min-width: 768px) {
+    max-width: 1000px;
+  }
+  @media (min-width: 1200px) {
+    margin-inline: auto;
+  }
 `
 export const Details = styled.div`
   position: absolute;
