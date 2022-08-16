@@ -15,7 +15,6 @@ code {
 
 .right-animation {
   animation: appear 1.5s ease;
-  cursor: pointer;
 }
 
 @keyframes appear {
@@ -99,5 +98,17 @@ code {
   }
   to {
     transform: scale(1);
+  }
+}
+.footer-animation {
+  animation: footer 3s ease;
+}
+
+@keyframes footer {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
   }
 }

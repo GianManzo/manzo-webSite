@@ -14,7 +14,7 @@ export const Footer = () => {
   return (
     <C.Footer>
       <nav>
-        <ul className="show-animation">
+        <ul className="footer-animation">
           <li>
             <a
               href="https://api.whatsapp.com/send?phone=+5519989873771&text=Ola. Gostei do seu portfólio, podemos conversar?!"
