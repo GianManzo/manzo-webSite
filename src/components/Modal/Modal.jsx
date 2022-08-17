@@ -1,5 +1,6 @@
 import React from 'react'
 import * as C from './Styles'
+import { Link } from 'react-router-dom'
 import {
   House,
   User,
@@ -13,21 +14,17 @@ import {
   LinkedinLogo,
   DiscordLogo
 } from 'phosphor-react'
-import { Link } from 'react-router-dom'
 
 export const Modal = ({ setUrl, setModal }) => {
   const handleClick = e => {
-    if (e.target === e.currentTarget) setModal(false)
-  }
-
-  const handleClickLink = e => {
-    if (e.target.nodeName === 'A') setModal(false)
+    if (e.target === e.currentTarget || e.target.nodeName === 'A')
+      setModal(false)
   }
 
   return (
     <>
       <C.Modal onClick={handleClick}>
-        <C.Wrapper onClick={handleClickLink} className="modal-animation">
+        <C.Wrapper className="modal-animation">
           <div>
             <p>G E R A L</p>
             <nav>
