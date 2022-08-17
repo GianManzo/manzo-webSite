@@ -20,13 +20,13 @@ export const Wrapper = styled.div`
   background: rgba(24, 24, 24, 0.79);
   border-radius: 5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  height: 480px;
+  height: 30rem;
   overflow-y: scroll;
-  width: 380px;
+  width: 23.75rem;
   -webkit-backdrop-filter: blur(20px);
 
   @media (min-width: 768px) {
-    width: 480px;
+    width: 30rem;
   }
 
   &::-webkit-scrollbar {
@@ -51,7 +51,7 @@ export const Wrapper = styled.div`
     border-bottom: 1px solid ${gray.g12};
     color: ${gray.g2};
     font-family: 'Fira Sans', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
     padding: 1rem;
@@ -61,7 +61,7 @@ export const Wrapper = styled.div`
     align-items: center;
     color: ${gray.g5};
     display: flex;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Roboto', sans-serif;
     gap: 1rem;
     opacity: 0.7;

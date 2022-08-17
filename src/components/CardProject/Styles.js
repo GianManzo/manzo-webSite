@@ -4,13 +4,13 @@ import { gray, purple } from '../../_variables/_colors'
 export const Items = styled.li`
   display: flex;
   justify-content: center;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 `
 
 export const Container = styled.div`
   background-color: ${gray.g18};
   border-radius: 5px;
-  max-width: 500px;
+  max-width: 31.25rem;
   opacity: 0.8;
   position: relative;
   transition: 0.3s;
@@ -52,15 +52,15 @@ export const Image = styled.div`
 export const Infos = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 44px;
-  margin-block: 20px;
+  grid-gap: 2.75rem;
+  margin-block: 1.25rem;
 
   h2 {
     color: ${gray.g1};
     font-family: 'Fira Sans', sans-serif;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
   }
 `
 export const Descriptions = styled.div`
@@ -68,10 +68,10 @@ export const Descriptions = styled.div`
     color: ${gray.g4};
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 100;
-    line-height: 20px;
-    margin-bottom: 20px;
+    line-height: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 
   a {
@@ -84,7 +84,7 @@ export const Descriptions = styled.div`
     border: 1px solid ${purple.p9};
     border-radius: 5px;
     box-shadow: 0 1px 2px 0 ${purple.p4s};
-    margin-top: 20px;
+    margin-top: 1.25rem;
     padding: 0.75rem;
     text-align: center;
     transition: 0.3s;
@@ -104,7 +104,7 @@ export const Techs = styled.div`
       background-color: ${gray.g14};
       border-radius: 5px;
       color: ${gray.g1};
-      padding: 10px;
+      padding: 0.625rem;
     }
   }
 `
