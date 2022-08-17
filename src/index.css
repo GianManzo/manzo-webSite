@@ -8,6 +8,24 @@ body {
   background-color: #050505;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(120px);
+  -webkit-backdrop-filter: blur(120px);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #511ca6;
+  border-radius: 5px;
+}
+
+::selection {
+  color: #050505;
+  background-color: #9765e9;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

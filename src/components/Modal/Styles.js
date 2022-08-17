@@ -2,28 +2,29 @@ import styled from 'styled-components'
 import { gray, purple } from '../../_variables/_colors'
 
 export const Modal = styled.div`
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  z-index: 1000;
-  padding: 2rem calc(4rem +15px) 2rem 4rem;
-  color: white;
-  justify-content: center;
   align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  padding: 2rem calc(4rem +15px) 2rem 4rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
 `
 export const Wrapper = styled.div`
-  width: 380px;
-  height: 480px;
+  backdrop-filter: blur(20px);
   background: rgba(24, 24, 24, 0.79);
   border-radius: 5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  height: 480px;
   overflow-y: scroll;
+  width: 380px;
+  -webkit-backdrop-filter: blur(20px);
+
   @media (min-width: 768px) {
     width: 480px;
   }
@@ -32,10 +33,11 @@ export const Wrapper = styled.div`
     width: 5px;
   }
   &::-webkit-scrollbar-track {
-    background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(120px);
+    background-color: rgba(255, 255, 255, 0);
     -webkit-backdrop-filter: blur(120px);
   }
+
   &::-webkit-scrollbar-thumb {
     background-color: ${purple.p9};
     border-radius: 5px;
@@ -44,30 +46,33 @@ export const Wrapper = styled.div`
   ul {
     margin-bottom: 3rem;
   }
+
   p {
-    font-size: 14px;
-    font-family: 'Fira Sans', sans-serif;
-    padding: 1rem;
-    color: ${gray.g2};
     border-bottom: 1px solid ${gray.g12};
+    color: ${gray.g2};
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
     font-weight: 600;
     margin-bottom: 0.75rem;
+    padding: 1rem;
   }
+
   a {
-    display: flex;
     align-items: center;
-    text-decoration: none;
     color: ${gray.g5};
-    gap: 1rem;
-    padding: 0.75rem 1rem;
+    display: flex;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    opacity: 70%;
+    gap: 1rem;
+    opacity: 0.7;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
     transition: 0.3s;
+
     :hover {
       background-color: ${gray.g12};
       color: #fff;
-      opacity: 100%;
+      opacity: 1;
     }
   }
 `
