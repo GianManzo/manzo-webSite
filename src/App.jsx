@@ -20,9 +20,9 @@ function App() {
             path="/"
             element={<Home modal={modal} setModal={setModal} />}
           />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/sobre" element={<About />} />
+          <Route path="/tecnologias" element={<Skills />} />
+          <Route path="/projetos" element={<Projects />} />
         </Routes>
         <Footer />
       </BrowserRouter>

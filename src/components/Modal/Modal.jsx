@@ -15,7 +15,7 @@ import {
 } from 'phosphor-react'
 import { Link } from 'react-router-dom'
 
-export const Modal = ({ setModal }) => {
+export const Modal = ({ setUrl, setModal }) => {
   const handleClick = e => {
     if (e.target === e.currentTarget) setModal(false)
   }
@@ -31,25 +31,25 @@ export const Modal = ({ setModal }) => {
           <div>
             <p>G E R A L</p>
             <nav>
-              <ul>
+              <ul onClick={() => setUrl(window.location.href)}>
                 <li>
                   <Link to="/">
                     <House size={25} /> Inicio
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about">
+                  <Link to="/sobre">
                     <User size={25} /> Sobre
                   </Link>
                 </li>
                 <li>
-                  <Link to="/skills">
+                  <Link to="/tecnologias">
                     <Code size={25} />
                     Tecnologias
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projects">
+                  <Link to="/projetos">
                     <LightbulbFilament size={25} />
                     Projetos
                   </Link>
