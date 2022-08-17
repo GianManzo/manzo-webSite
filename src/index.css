@@ -130,3 +130,16 @@ code {
     opacity: 1;
   }
 }
+
+.arrow {
+  animation: arrow-animation 0.8s alternate-reverse ease-in-out infinite;
+}
+
+@keyframes arrow-animation {
+  from {
+    transform: translateX(4px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
