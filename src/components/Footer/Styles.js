@@ -6,7 +6,7 @@ export const Footer = styled.footer`
   display: flex;
   height: ${height_Footer};
   justify-content: center;
-  margin-inline: 24px;
+  margin-inline: 1.5rem;
 
   nav {
     width: 100%;
