@@ -10,7 +10,7 @@ export const Header = ({ modal, setModal }) => {
   const links = Array.from(document.querySelectorAll('li a'))
 
   useEffect(() => {
-    const pathName = url?.replace('http://localhost:3000/', '')
+    const pathName = url?.replace('https://manzo.vercel.app/', '')
     addClass(pathName)
   }, [url, links])
 
