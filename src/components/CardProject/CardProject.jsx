@@ -5,7 +5,7 @@ import { ReactComponent as Details } from '../../assets/Rectangle.svg'
 
 export const CardProject = () => {
   return (
-    <ul className="right-animation">
+    <C.Ul>
       {projects.map(item => (
         <C.Items key={item.id}>
           <C.Container>
@@ -40,6 +40,6 @@ export const CardProject = () => {
           </C.Container>
         </C.Items>
       ))}
-    </ul>
+    </C.Ul>
   )
 }

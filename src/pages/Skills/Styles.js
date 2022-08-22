@@ -2,6 +2,11 @@ import styled from 'styled-components'
 import { gray } from '../../_variables/_colors'
 import { height_Header } from '../../components/Header/Styles'
 import { height_Footer } from '../../components/Footer/Styles'
+import { rightAnimation } from '../../Global-animation'
+
+export const Section = styled.section`
+  animation: ${rightAnimation} 1.5s ease;
+`
 
 export const Wrapper = styled.div`
   margin-inline: 1.5rem;

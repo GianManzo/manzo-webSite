@@ -1,6 +1,15 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const height_Footer = '48px'
+
+const animationFooter = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
 
 export const Footer = styled.footer`
   display: flex;
@@ -12,6 +21,7 @@ export const Footer = styled.footer`
     width: 100%;
 
     ul {
+      animation: ${animationFooter} 3s ease;
       align-items: center;
       display: flex;
       height: 100%;

@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 import { gray, purple } from '../../_variables/_colors'
+import { rightAnimation } from '../../Global-animation'
+
+export const Section = styled.section`
+  animation: ${rightAnimation} 1.5s ease;
+`
 
 export const Wrapper = styled.div`
   margin: 1.5rem;

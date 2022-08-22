@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { gray, purple } from '../../_variables/_colors'
 
 export const Modal = styled.div`
@@ -15,7 +15,18 @@ export const Modal = styled.div`
   z-index: 1000;
   width: 100vw;
 `
+
+const showModal = keyframes`
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+`
+
 export const Wrapper = styled.div`
+  animation: ${showModal} 0.3s alternate;
   backdrop-filter: blur(20px);
   background: rgba(24, 24, 24, 0.79);
   border-radius: 5px;

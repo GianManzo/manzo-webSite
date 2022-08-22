@@ -5,7 +5,7 @@ import { ReactComponent as Details } from '../../assets/details.svg'
 export const Title = ({ children }) => {
   return (
     <>
-      <C.Box_Title className="right-animation">
+      <C.Box_Title>
         <h1>{children}</h1>
         <C.Details>
           <Details />
