@@ -32,11 +32,11 @@ export const Header = ({ modal, setModal }) => {
       <C.Header>
         <nav>
           <ul onClick={() => setUrl(window.location.href)}>
-            <li className="right-animation">
+            <C.LiLogo className="logo">
               <Link to="/">
                 <Logo />
               </Link>
-            </li>
+            </C.LiLogo>
             <ul>
               <li>
                 <Link to="/sobre">Sobre</Link>

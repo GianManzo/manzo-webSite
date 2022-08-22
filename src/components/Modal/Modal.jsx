@@ -24,7 +24,7 @@ export const Modal = ({ setUrl, setModal }) => {
   return (
     <>
       <C.Modal onClick={handleClick}>
-        <C.Wrapper className="modal-animation">
+        <C.Wrapper>
           <div>
             <p>G E R A L</p>
             <nav>

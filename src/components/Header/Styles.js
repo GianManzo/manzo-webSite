@@ -1,7 +1,12 @@
 import styled from 'styled-components'
 import { gray } from '../../_variables/_colors'
+import { rightAnimation } from '../../Global-animation'
 
 export const height_Header = '72px'
+
+export const LiLogo = styled.li`
+  animation: ${rightAnimation} 1.5s ease;
+`
 
 export const Header = styled.header`
   height: ${height_Header};
@@ -23,7 +28,7 @@ export const Header = styled.header`
         width: 100%;
       }
 
-      li:not(.right-animation) {
+      li:not(.logo) {
         a {
           color: ${gray.g6};
           display: none;

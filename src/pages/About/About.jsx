@@ -7,7 +7,7 @@ import SouDev from '../../assets/soudev.svg'
 export const About = () => {
   return (
     <>
-      <section className="right-animation">
+      <C.Section>
         <C.Wrapper>
           <Title>
             Sobre<span>.</span>
@@ -92,7 +92,7 @@ export const About = () => {
             </C.Text>
           </C.Grid>
         </C.Wrapper>
-      </section>
+      </C.Section>
     </>
   )
 }

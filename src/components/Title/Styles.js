@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import { gray, purple } from '../../_variables/_colors'
+import { rightAnimation } from '../../Global-animation'
 
 export const Box_Title = styled.div`
+  animation: ${rightAnimation} 1.5s ease;
   height: 100%;
-  margin-block: 34px;
-  margin-inline: 24px;
+  margin-block: 2.125rem;
+  margin-inline: 1.5rem;
   position: relative;
   width: 100%;
   z-index: 10;
@@ -13,7 +15,7 @@ export const Box_Title = styled.div`
     color: ${gray.g4};
     cursor: default;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 38px;
+    font-size: 2.375rem;
     font-weight: bold;
     text-align: left;
 
@@ -22,7 +24,7 @@ export const Box_Title = styled.div`
     }
   }
   @media (min-width: 768px) {
-    max-width: 1000px;
+    max-width: 62.5rem;
   }
 
   @media (min-width: 1200px) {

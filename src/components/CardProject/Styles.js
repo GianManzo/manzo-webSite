@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 import { gray, purple } from '../../_variables/_colors'
+import { rightAnimation } from '../../Global-animation'
+
+export const Ul = styled.ul`
+  animation: ${rightAnimation} 1.5s ease;
+`
 
 export const Items = styled.li`
   display: flex;

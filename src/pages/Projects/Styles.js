@@ -1,8 +1,17 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { gray, purple } from '../../_variables/_colors'
 
 export const Wrapper = styled.div`
   margin-inline: 24px;
+`
+
+const arrowAnimation = keyframes`
+   from {
+     transform: translateX(4px);
+   }
+   to {
+     transform: translateX(0);
+   } 
 `
 
 export const More = styled.div`
@@ -27,6 +36,10 @@ export const More = styled.div`
     transition: 0.3s;
     text-decoration: none;
     gap: 1rem;
+
+    svg:first-child {
+      animation: ${arrowAnimation} 0.8s alternate-reverse ease-in-out infinite;
+    }
 
     :hover {
       opacity: 1;

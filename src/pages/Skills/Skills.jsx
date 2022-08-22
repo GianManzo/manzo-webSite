@@ -6,7 +6,7 @@ import { ListSkills } from '../../data/_ListSkills'
 export const Skills = () => {
   return (
     <>
-      <section className="right-animation">
+      <C.Section>
         <C.Wrapper>
           <Title>
             Tecnologias<span>.</span>
@@ -20,7 +20,7 @@ export const Skills = () => {
             ))}
           </C.Grid>
         </C.Wrapper>
-      </section>
+      </C.Section>
     </>
   )
 }

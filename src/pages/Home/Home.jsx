@@ -8,7 +8,7 @@ export const Home = ({ modal, setModal }) => {
     <>
       <section>
         <C.Wrapper>
-          <div className="right-animation">
+          <div>
             <h1>Gian Manzo</h1>
             <p>Desenvolvedor Front-end 💻</p>
             <C.Btn onClick={() => setModal(!modal)}>

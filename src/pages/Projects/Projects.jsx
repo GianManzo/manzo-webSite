@@ -19,7 +19,7 @@ export const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              More in <ArrowRight className="arrow" size={20} />
+              More in <ArrowRight size={20} />
               <GithubLogo size={25} />
             </a>
           </C.More>

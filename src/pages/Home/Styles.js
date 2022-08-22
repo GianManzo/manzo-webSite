@@ -1,7 +1,8 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { height_Header } from '../../components/Header/Styles'
 import { gray, purple } from '../../_variables/_colors'
 import { height_Footer } from '../../components/Footer/Styles'
+import { rightAnimation } from '../../Global-animation'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -9,6 +10,10 @@ export const Wrapper = styled.div`
   height: calc(100vh - ${height_Header} - ${height_Footer});
   justify-content: center;
   margin-inline: 1.5rem;
+
+  &:first-child {
+    animation: ${rightAnimation} 1.5s ease;
+  }
 
   h1 {
     color: ${gray.g2};
@@ -57,10 +62,71 @@ export const Btn = styled.button`
     opacity: 1;
   }
 `
+const rocketAppear = keyframes`
+ from {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
+
+const turbinesRocket = keyframes`
+  from {
+    transform: skew(0deg, -1deg);
+  }
+`
+
+const movePoint = keyframes`
+  from {
+     transform: translateY(2000px);
+   }
+   to {
+     transform: translateY(-200px);
+   }
+`
+
+const moveTwo = keyframes`
+  from {
+     transform: translateY(3000px);
+   }
+   to {
+     transform: translateY(-300px);
+  }
+`
+
+const moveThird = keyframes`
+   from {
+     transform: translateY(3000px);
+   }
+   to {
+     transform: translateY(-300px);
+   }
+`
 
 export const Rocket = styled.div`
+  animation: ${rocketAppear} 1.5s ease;
   display: flex;
   justify-content: center;
   margin-inline: 1.5rem;
   margin-top: 4rem;
+
+  path.turbines-rocket {
+    animation: ${turbinesRocket} 0.2s cubic-bezier(0.6, -0.6, 0.32, 1.6)
+      alternate infinite;
+  }
+
+  path.point-one {
+    animation: ${movePoint} 4.5s reverse infinite;
+  }
+
+  path.point-two {
+    animation: ${moveTwo} 3.5s reverse infinite;
+  }
+
+  path.point-third {
+    animation: ${moveThird} 5.5s reverse infinite;
+  }
 `
